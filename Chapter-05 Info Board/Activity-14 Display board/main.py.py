@@ -1,0 +1,13 @@
+from machine import Pin, I2C
+from ssd1306 import SSD1306_I2C
+WIDTH =128 
+HEIGHT= 64
+i2c=I2C(0,scl=Pin(1),sda=Pin(0),freq=200000)
+oled = SSD1306_I2C(WIDTH,HEIGHT,i2c)
+while True:
+    oled.fill(0)
+    oled.text("An Apple a Day,", 0, 20)
+    oled.text("Keeps the Doctor", 0, 35) 
+    oled.text("Away!!!", 0, 50)
+#     oled.text("your face", 0, 55)
+    oled.show()
