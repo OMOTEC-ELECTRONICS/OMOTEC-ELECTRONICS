@@ -8,6 +8,5 @@ while True:
     oled.fill(0)
     oled.text("An Apple a Day,", 0, 20)
     oled.text("Keeps the Doctor", 0, 35) 
-    oled.text("Away!!!", 0, 50)
-#     oled.text("your face", 0, 55)
+    oled.text("Away!!!", 0, 45)
     oled.show()
