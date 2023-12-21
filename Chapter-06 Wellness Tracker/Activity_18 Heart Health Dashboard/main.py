@@ -13,7 +13,7 @@ adc = ADC(Pin(26, mode=Pin.IN))
 
 # Define input and output ranges for mapping
 in_min, in_max = 0, 65535
-out_min, out_max = 50, 65
+out_min, out_max = 50, 90
 
 while True:
     oled.fill(0)
