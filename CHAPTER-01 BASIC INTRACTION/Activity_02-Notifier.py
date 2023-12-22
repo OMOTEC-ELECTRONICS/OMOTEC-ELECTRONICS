@@ -9,10 +9,10 @@ while True:
     print(Button.value())
  # Check if the button is pressed
     if Button.value() == 1:
-        # Print a message and wait for 1 second to avoid rapid triggering
+        # Print a message and wait for 0.5 second to avoid rapid triggering
         print("Patient Assistance Requested: Room 203")
         utime.sleep(0.5)
     else:
-        # Print a placeholder message and wait for 1 second
+        # Print a placeholder message and wait for 0.5 second
         print("--")
         utime.sleep(0.5)
